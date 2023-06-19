@@ -5,13 +5,13 @@ const Features = () => {
             <div className='px-4 py-10 lg:py-0  lg:px-20 space-y-6 lg:space-y-10'>
                 <div>
                     <h1 className='text-4xl lg:text-6xl font-bold mb-5 text-[#4D4D4D]'>Free Medical Consultations</h1>
-                    <h3 className='text-4xl'>Sign up today and get free medical consultancy for 15
+                    <h3 className='text-3xl'>Sign up today and get free medical consultancy for 15
                         minutes within the first 3 days.
                     </h3>
                 </div>
                 <div>
                     <h1 className='text-4xl lg:text-6xl font-bold mb-5 text-[#4D4D4D]'>Pro Membership Benefits</h1>
-                    <h3 className='text-4xl'>Get exclusive features and benefits as a Pro member,
+                    <h3 className='text-3xl'>Get exclusive features and benefits as a Pro member,
                         including access to premium customer support.
 
                     </h3>
