@@ -1,8 +1,8 @@
 import featureImg from '../../assets/images/girl_1.png'
 const Features = () => {
     return (
-        <section className='flex flex-col lg:flex-row justify-between items-center '>
-            <div className='px-4 py-10 lg:py-0 lg:px-24 space-y-7 lg:space-y-14'>
+        <section className='flex flex-col lg:flex-row justify-between  items-center'>
+            <div className='px-4 py-10 lg:py-0  lg:px-20 space-y-6 lg:space-y-10'>
                 <div>
                     <h1 className='text-4xl lg:text-6xl font-bold mb-5 text-[#4D4D4D]'>Free Medical Consultations</h1>
                     <h3 className='text-4xl'>Sign up today and get free medical consultancy for 15
@@ -17,7 +17,7 @@ const Features = () => {
                     </h3>
                 </div>
             </div>
-            <img className='lg:w-[26%] shrink-0' src={featureImg} alt="Feature Image" />
+            <img className='lg:w-[26%] shrink-0 h-full' src={featureImg} alt="Feature Image" />
         </section>
     );
 };
