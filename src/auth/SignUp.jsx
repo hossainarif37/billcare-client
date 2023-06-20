@@ -11,11 +11,11 @@ const SignUp = () => {
             <div className='bg-white lg:w-[692px] px-4 rounded-[40px] mx-auto items-center text-center py-10 lg:py-14'>
                 <h1 className="uppercase text-3xl lg:text-4xl font-extrabold">Create Account</h1>
                 <div className='flex flex-col lg:flex-row py-8 lg:py-10 justify-center gap-5 lg:gap-10'>
-                    <button className='flex justify-center gap-3 rounded-2xl items-center border px-4 py-2'>
+                    <button className='flex active:scale-95 transition-all justify-center gap-3 rounded-2xl items-center border px-4 py-2'>
                         <img src={googleIcon} alt="google icon" />
                         <span>Sign up with Google</span>
                     </button>
-                    <button className='flex justify-center gap-3 rounded-2xl items-center border px-4 py-2'>
+                    <button className='flex active:scale-95 transition-all justify-center gap-3 rounded-2xl items-center border px-4 py-2'>
                         <img src={facebookIcon} alt="facebook icon" />
                         <span>Sign up with Facebook</span>
                     </button>
