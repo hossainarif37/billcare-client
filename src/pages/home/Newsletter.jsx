@@ -2,7 +2,7 @@ import newsletterImg from '../../assets/images/girl_2.png'
 const Newsletter = () => {
     return (
         <section className='flex flex-col lg:flex-row justify-between bg-[#FBFAF8]  items-center'>
-            <div className=' px-4 py-10 lg:py-0  lg:pl-20 lg:pr-10 space-y-6 lg:space-y-10 bg-[#FBFAF8]'>
+            <div className=' px-4 py-10 lg:py-0  lg:pl-20 lg:pr-10 space-y-6 lg:space-y-10'>
                 <div>
                     <h1 className='text-4xl lg:text-6xl font-black mb-5 text-[#4D4D4D]'>Sign Up for our Newsletter</h1>
                     <h3 className='text-3xl'>Stay updated with the latest news and offers from <br className='hidden lg:block' /> BillCare.

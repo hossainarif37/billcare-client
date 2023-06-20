@@ -11,7 +11,7 @@ const Pricing = () => {
                     <p className='text-3xl'>Upgrade to Pro membership and enjoy all the exclusive
                         features.</p>
                 </div>
-                <div className='flex flex-col lg:flex-row gap-5 lg:gap-28 items-center   text-[#04083A]'>
+                <div className='flex flex-col lg:flex-row gap-5 mb-10 lg:mb-0 lg:gap-28   text-[#04083A]'>
                     <div className='text-center bg-[#D6D7DB] w-[250px] mx-auto lg:mx-0  py-10 border-4 rounded-3xl border-white'>
                         <h1 className='text-5xl mb-3 font-black'>Yearly</h1>
                         <h3 className='text-4xl'>19,999</h3>
