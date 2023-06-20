@@ -1,13 +1,26 @@
 import './signup.css'
 import googleIcon from '../assets/icons/google.png'
 import facebookIcon from '../assets/icons/facebook.png'
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 const SignUp = () => {
+    const location = useLocation();
+    console.log(location);
+    const navigate = useNavigate();
+
+
     const handleSubmit = (e) => {
         e.preventDefault();
     }
     return (
         <section className="signup-page py-10 lg:py-16 h-screen">
+            {
+                location.pathname === '/signup' && <button onClick={() => navigate('/')} className='bg-[#04083A] absolute top-7 hidden lg:block right-5 text-white active:scale-95 cursor-pointer transition-all w-[200px] mx-auto mt-10 rounded-2xl py-4 font-bold text-xl'>
+                    Back to home
+                </button>
+            }
+            {
+                location.pathname === '/signup' && <Link className="absolute top-2 right-2 text-[#04083A] underline block lg:hidden" to='/'>Home</Link>
+            }
             <div className='bg-white lg:w-[692px] px-4 rounded-[40px] mx-auto items-center text-center py-10 lg:py-14'>
                 <h1 className="uppercase text-3xl lg:text-4xl font-extrabold">Create Account</h1>
                 <div className='flex flex-col lg:flex-row py-8 lg:py-10 justify-center gap-5 lg:gap-10'>
