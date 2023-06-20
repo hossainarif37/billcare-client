@@ -12,7 +12,7 @@ const SignUp = () => {
         e.preventDefault();
     }
     return (
-        <section className="signup-page py-10 lg:py-16 h-screen relative">
+        <section className="signup-page py-10 lg:py-16 relative">
             {
                 location.pathname === '/signup' && <button onClick={() => navigate('/')} className='bg-[#04083A] absolute top-7 hidden lg:block right-5 text-white active:scale-95 cursor-pointer transition-all w-[200px] mx-auto mt-10 rounded-2xl py-4 font-bold text-xl'>
                     Back to home
