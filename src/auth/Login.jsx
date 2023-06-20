@@ -11,7 +11,7 @@ const Login = () => {
         e.preventDefault();
     }
     return (
-        <section className="signup-page py-10 lg:py-16 relative">
+        <section className="lg:signup-page py-10 lg:py-16 relative">
             {
                 location.pathname === '/login' && <button onClick={() => navigate('/')} className='bg-[#04083A] absolute top-7 right-5 hidden lg:block text-white active:scale-95 cursor-pointer transition-all w-[200px] mx-auto mt-10 rounded-2xl py-4 font-bold text-xl'>
                     Back to home
@@ -20,7 +20,7 @@ const Login = () => {
             {
                 location.pathname === '/login' && <Link className="absolute top-2 text-[#04083A] underline right-2 block lg:hidden font-bold" to='/'>Home</Link>
             }
-            <div className='bg-white lg:w-[692px] px-4 rounded-[40px] mx-auto items-center text-center py-10 lg:py-14'>
+            <div className='bg-white lg:w-[692px] px-4 lg:rounded-[40px] mx-auto items-center text-center py-10 lg:py-14'>
                 <h1 className="uppercase text-3xl lg:text-4xl font-extrabold">Log In</h1>
                 <div className='flex flex-col lg:flex-row py-8 lg:py-10 justify-center gap-5 lg:gap-10'>
                     <button className='flex active:scale-95 transition-all justify-center gap-3 rounded-2xl items-center border px-4 py-2'>
