@@ -1,15 +1,16 @@
+import { Link } from "react-router-dom";
 import './signup.css'
 import googleIcon from '../assets/icons/google.png'
 import facebookIcon from '../assets/icons/facebook.png'
-import { Link } from 'react-router-dom';
-const SignUp = () => {
+
+const Login = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
     }
     return (
         <section className="signup-page py-10 lg:py-16 h-screen">
             <div className='bg-white lg:w-[692px] px-4 rounded-[40px] mx-auto items-center text-center py-10 lg:py-14'>
-                <h1 className="uppercase text-3xl lg:text-4xl font-extrabold">Create Account</h1>
+                <h1 className="uppercase text-3xl lg:text-4xl font-extrabold">Log In</h1>
                 <div className='flex flex-col lg:flex-row py-8 lg:py-10 justify-center gap-5 lg:gap-10'>
                     <button className='flex active:scale-95 transition-all justify-center gap-3 rounded-2xl items-center border px-4 py-2'>
                         <img src={googleIcon} alt="google icon" />
@@ -27,16 +28,15 @@ const SignUp = () => {
                 </div>
                 <form onClick={handleSubmit} className='lg:px-28'>
                     <div className='space-y-8 lg:space-y-10'>
-                        <input type="text" className='border-b border-[#BBBBBB] pt-2 placeholder:text-lg w-full outline-none' placeholder='Full Name' />
-                        <input type="email" autoComplete='off' className='border-b border-[#BBBBBB] pt-2 placeholder:text-lg w-full outline-none' placeholder='Email Address' />
+                        <input type="email" autoComplete='off' className='border-b border-[#BBBBBB] pt-2 placeholder:text-lg w-full outline-none' placeholder='Username or Email' />
                         <input type="password" autoComplete='off' className='border-b border-[#BBBBBB] pt-2 placeholder:text-lg w-full outline-none' placeholder='Password' />
                     </div>
-                    <input type='submit' value='Create Account' className='bg-[#04083A] text-white active:scale-95 cursor-pointer transition-all w-full lg:w-[373px] mt-10 rounded-2xl py-4 font-bold text-xl' />
+                    <input type='submit' value='Log In' className='bg-[#04083A] text-white active:scale-95 cursor-pointer transition-all w-full lg:w-[373px] mt-10 rounded-2xl py-4 font-bold text-xl' />
                 </form>
-                <p className='mt-8 lg:mt-10'><span>Already have an account? <Link to='/login' className='font-semibold text-[#04083A]'>Log In</Link></span></p>
+                <p className='mt-8 lg:mt-10'><span>Don't have an account? <Link to='/signup' className='font-semibold text-[#04083A]'>Sign Up</Link></span></p>
             </div>
         </section>
     );
 };
 
-export default SignUp;
+export default Login;
