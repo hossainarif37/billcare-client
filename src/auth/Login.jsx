@@ -1,5 +1,4 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import './signup.css'
 import googleIcon from '../assets/icons/google.png'
 import facebookIcon from '../assets/icons/facebook.png'
 
